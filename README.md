@@ -7,7 +7,7 @@ Application for adding notes to calendar.
 * HTML/CSS/JS
 * Bootstrap
 
-## Requirements
+### Requirements
 ```
 Django==1.11.2
 pytz==2017.2
