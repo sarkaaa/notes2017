@@ -1,6 +1,11 @@
 # Notes 2017
-## About
+### About
 Application for adding notes to calendar.
+
+### Used
+* Python/Django
+* HTML/CSS/JS
+* Bootstrap
 
 ## Requirements
 ```
@@ -9,12 +14,12 @@ pytz==2017.2
 ```
 
 
-## Download
+### Download
 ```
 git clone git@github.com:sarkaaa/notes2017.git
 ```
 
-## Run
+### Run
 You can run application in virtual environment (venv).
 ```
 python manage.py makemigrations
