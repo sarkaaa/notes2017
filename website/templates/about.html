@@ -1,0 +1,17 @@
+{% extends './base.html' %}
+{% block content %}
+
+
+<h1>About your notes</h1>
+<b>Number of all notes:</b> {{ all_notes }}
+<br /><b>Notes in actual month:</b> {{ notes_in_month }}
+<br />
+<div class="latest">
+<h4>The latest note</h4>
+<h2>{{ newest.title }}</h2>
+<h3>{{ newest.publish_date }}</h3>
+<div class="note" ng-hide="n">
+  {{ newest.note }}
+</div>
+</div>
+{% endblock %}

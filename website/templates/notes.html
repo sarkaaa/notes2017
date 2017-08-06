@@ -1,0 +1,40 @@
+{% extends './base.html' %}
+{% block content %}
+
+
+<h1>Notes</h1>
+
+{% for note in notes %}
+<div class="next">
+  <h2>{{ note.title }}</h2>
+  <h3>{{ note.publish_date }}</h3>
+    {{ note.note }}
+</div>
+{% endfor %}
+
+<div class="pg-center">  
+  {% if notes.has_other_pages %}
+  <ul class="pagination">
+    {% if notes.has_previous %}
+    <li><a href="?page={{ notes.previous_page_number }}">&laquo;</a></li>
+    {% else %}
+    <li class="disabled"><span>&laquo;</span></li>
+    {% endif %}
+    {% for i in notes.paginator.page_range %}
+    {% if notes.number == i %}
+    <li class="active"><span>{{ i }} </span></li>
+    {% else %}
+    <li><a href="?page={{ i }}">{{ i }}</a></li>
+    {% endif %}
+    {% endfor %}
+    {% if notes.has_next %}
+    <li><a href="?page={{ notes.next_page_number }}">&raquo;</a></li>
+    {% else %}
+    <li class="disabled"><span>&raquo;</span></li>
+    {% endif %}
+  </ul>
+  {% endif %}
+</div>
+
+
+{% endblock %}

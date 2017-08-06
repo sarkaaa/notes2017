@@ -1,0 +1,22 @@
+{% extends './base.html' %}
+{% block content %}
+
+
+<h1>Search a note</h1>
+<form action="{% url 'calendar' %}" method="post">{% csrf_token %}
+<div class="form-group">
+  <label for="">Date</label><br>
+      <input class="input-group date form-control input-sm" data-provide="datepicker" id="example1" type="text" name="date" value="{{query.date}}">
+</div>
+<input type="submit" class="btn btn-danger" value="Go!">
+</form>
+<br />
+{% for note in notes %}
+              <h2>{{ note.title }} </h2>
+              <h3>{{ note.publish_date }}</h3>
+              <div class="note" ng-hide="n">
+                {{ note.note }}
+              </div>
+{% endfor %}
+
+{% endblock %}

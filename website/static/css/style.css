@@ -1,0 +1,213 @@
+/* body, link style */
+body {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #e4e3e3;
+  color: #606060;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+  color: #6194bc;
+}
+
+a:hover {
+  color: #c33e2b;
+  text-decoration: none;
+}
+
+/* navbar style */
+
+.navbar {
+  margin-top: 25px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: #79b9eb;
+}
+
+.navbar-nav li{
+
+}
+
+.next {
+  border-bottom: 1px dashed #e6e6e6;
+}
+
+.navbar-nav li:hover{
+  background-color: #88c1ed;
+}
+
+/* button style */
+
+.btn {
+  background-color: #c33e2b;
+  color: #ffffff;
+  font-size: 20px;
+  border: none;
+}
+
+.btn:hover{
+  background-color: #6194bc;
+  color: #ffffff;
+}
+
+/* id selectors */
+#cat {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+#copy {
+  color: #79b9eb;
+  font-size: 24px;
+}
+
+#copy:hover {
+  color: #c33e2b;
+}
+
+#succes {
+  color: #0ca607;
+  font-size: 20px;
+}
+
+
+/* Pagination */
+.pg-center {
+  text-align: center;
+}
+
+.pagination ul {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.pagination li {
+  display: inline;
+}
+
+.pagination li a {
+  color: #606060;
+  text-decoration: none;
+}
+
+.pagination li.active {
+  background-color: black;
+  color: #ffffff;
+}
+
+.pagination li:hover:not(.active) a {
+  background-color: #a5d1f3;
+  color: #444444;
+}
+
+/* Label (form) style */
+label {
+  padding-top: 12px;
+}
+
+/* Headers */
+h1 {
+  color: #6194bc;
+  font-size: 20pt;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e5e5e5;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2 {
+  font-size: 15pt;
+  color: #79b9eb;
+  font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+  font-size: 9pt;
+  color: #727272;
+  padding-bottom: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+h4 {
+  color: #4587ba;
+  font-size: 13pt;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Latest note style, row style */
+
+.latest {
+  margin: 30px 5px 0px 5px;
+  padding: 10px;
+  border: 2px dashed #dedede;
+}
+
+.row {
+  margin: 10px;
+}
+
+.container {
+max-width: 650px;
+background-color: #ffffff;
+}
+
+.header,
+.marketing,
+.footer {
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 17px;
+}
+
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+  margin-bottom: 25px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 650px;
+    background-color: #ffffff;
+  }
+}
+
+  .container-narrow > hr {
+    margin: 30px 0;
+  }
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 20px;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  .container {
+    max-width: 650px;
+    background-color: #ffffff;
+  }
+}

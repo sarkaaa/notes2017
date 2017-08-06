@@ -1,0 +1,7 @@
+db.sqlite3
+fonts/
+myvenv/
+agency.min.css
+website/migrations/
+website/__pycache__/
+*.pyc
