@@ -27,3 +27,8 @@ python manage.py migrate
 python manage.py createsuperuser
 python manage.py runserver 127.0.0.1:8000
 ```
+### Screenshots
+![Main page](http://sarkachwastkova.cz/img/portfolio/notes2017/01.png)
+![Search a note](http://sarkachwastkova.cz/img/portfolio/notes2017/02.png)
+![Add a note](http://sarkachwastkova.cz/img/portfolio/notes2017/03.png)
+![About your notes](http://sarkachwastkova.cz/img/portfolio/notes2017/04.png)
